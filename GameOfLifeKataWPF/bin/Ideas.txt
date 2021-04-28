@@ -1,0 +1,16 @@
+Game of life updates to make:
+
+Double check the "Alive" indicator. It had a bug earlier that made it display 2 when nothing was selected.
+
+Add in 3 speed options. Probably going to create another grid to house them.
+Add a clear button to clear the board.
+
+
+
+Question, do i want to keep the same Dictionary the whole time and just have it be built out for
+	the maximum possible number? Might need to see what is driving the loops. Would need it to be buttons.
+
+
+
+Add functionality in to draw larger areas
+Also, should look into whether or not i can drap and drop or something.

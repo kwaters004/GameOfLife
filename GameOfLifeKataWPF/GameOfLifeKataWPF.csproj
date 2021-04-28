@@ -6,4 +6,24 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="304-3045087_green-leaf-icon-png.png" />
+    <None Remove="circle.png" />
+    <None Remove="Fast.png" />
+    <None Remove="Medium.png" />
+    <None Remove="single.png" />
+    <None Remove="Slow.png" />
+    <None Remove="square.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="304-3045087_green-leaf-icon-png.png" />
+    <Resource Include="circle.png" />
+    <Resource Include="Fast.png" />
+    <Resource Include="Medium.png" />
+    <Resource Include="single.png" />
+    <Resource Include="Slow.png" />
+    <Resource Include="square.png" />
+  </ItemGroup>
+
 </Project>
