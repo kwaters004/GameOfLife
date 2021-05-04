@@ -346,25 +346,6 @@ namespace GameOfLifeKataWPF
             //MessageBox.Show(ButtonList.buttons.IndexOf(button).ToString());
         }
 
-        private void play_Click(object sender, RoutedEventArgs e)
-        {
-            play.Background = Brushes.ForestGreen;
-            StartLoop();
-        }
-
-        private void stop_Click()
-        {
-            var bc = new BrushConverter();
-            play.Background = (Brush)bc.ConvertFrom("#FFDDDDDD");
-            StopLoop();
-        }
-
-        private void stop_Click(object sender, RoutedEventArgs e)
-        {
-            var bc = new BrushConverter();
-            play.Background = (Brush)bc.ConvertFrom("#FFDDDDDD");
-            StopLoop();
-        }
 
         private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
@@ -400,6 +381,31 @@ namespace GameOfLifeKataWPF
 
 
         }
+
+        #region ButtonClicks
+
+
+        private void play_Click(object sender, RoutedEventArgs e)
+        {
+            play.Background = Brushes.ForestGreen;
+            StartLoop();
+        }
+
+        private void stop_Click()
+        {
+            var bc = new BrushConverter();
+            play.Background = (Brush)bc.ConvertFrom("#FFDDDDDD");
+            StopLoop();
+        }
+
+        private void stop_Click(object sender, RoutedEventArgs e)
+        {
+            var bc = new BrushConverter();
+            play.Background = (Brush)bc.ConvertFrom("#FFDDDDDD");
+            StopLoop();
+        }
+
+        
 
         private void nineSquare_Click(object sender, RoutedEventArgs e)
         {
@@ -504,6 +510,9 @@ namespace GameOfLifeKataWPF
             speed = 1500;
         }
 
+
+
+
         private void underPopDown_Click(object sender, RoutedEventArgs e)
         {
             AliveDead.underPopulated -= 1;
@@ -578,8 +587,14 @@ namespace GameOfLifeKataWPF
 
                 AliveDead.CreateDictionary(width, height);
                 CreateButtonsAndGrid(width, height);
+
+                livesText.Text = "Alive: 0";
+
+
             }
         }
+
+        #endregion
 
         public class ButtonList
         {
